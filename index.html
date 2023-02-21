@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+     <script type="text/javascript" src="script.js">
+</script>
+
+<script>
+    checkbrowser();
+    </script>
+</head>
+
+<body onload="startTime()"> 
+    <form>
+        <label>E-mail</label><br>
+        <input type="email" name="email" class="type-1" placeholder="my@email.ru" required><br>
+
+        <label>Password</label><br>
+        <input type="password" name="password" class="type-1" placeholder="Введите пароль" required pattern="[a-zA-Z0-9]+" minlength="6" maxlength="20" 
+         title="Введите пароль, используя латиницу и цифры, длиной от 6 до 20 символов"><br>
+
+         <label>Phone number</label> <br>
+         <input type="text" name="phone" class="type-1" placeholder="Номер телефона" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+         title="Некорректный формат номера телефона. Допустимые форматы: 8хххххххххх, +7хххххххххх, 8(ххх)ххххххх, +7(ххх)ххххххх"> <br>
+
+        <button>Войти</button>
+
+
+         
+
+      
+      </form>
+
+
+</body>
+  <span id="doc_time"> </span>
+
+<script> clock();
+</script>
+
+</html>
