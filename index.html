@@ -17,7 +17,7 @@
         <input type="email" name="email" class="type-1" placeholder="my@email.ru" required><br>
 
         <label>Пароль</label><br>
-        <input type="password" name="password" class="type-1" placeholder="Введите пароль" required pattern="[a-zA-Z0-9]+" minlength="6" maxlength="20" 
+        <input type="password" name="password" class="type-1" placeholder="Введите пароль" required pattern="^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{6,}).*$" minlength="6" maxlength="20" 
          title="Введите пароль, используя латиницу и цифры, длиной от 6 до 20 символов"><br>
 
          <label>Номер телефона</label> <br>
